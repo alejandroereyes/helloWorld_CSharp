@@ -10,13 +10,7 @@ namespace helloWorld
     {
         static void Main(string[] args)
         {
-            string subject = "World";
-
-            if (args.Length > 0)
-            {
-
-                subject = args[0];
-            }
+            string subject = (args.Length > 0) ? args[0] : "World";
 
             Console.WriteLine($"Hello {subject}!");
         }
